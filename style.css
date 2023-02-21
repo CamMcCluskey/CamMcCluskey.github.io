@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald&display=swap');
+
+* {
+	font-family: "Montserrat", sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	background-color: whitesmoke;
+}
+
+p {
+	text-indent: 40px;
+}
+
+.body {
+	width: 1000px;
+	min-height: 100vh;
+	background-color: rgba(122, 122, 122, 0.2);
+	border-left: 1px solid darkgrey;
+	border-right: 1px solid darkgrey;
+}
+
+header {
+	height: 100px;
+}
+
+h1 {
+	margin-top: 50px;
+}
+
+.content {
+	display:flex;
+}
+
+article {
+	margin-right: 120px;
+	margin-left: 40px;
+}
+
+.tab {
+	width: 120px;
+	border: 3px solid lightblue;
+	background-color: lightblue;
+}
+
+.tab:hover {
+	cursor: pointer;
+	border: 3px solid blue;
+}
+
+.active:hover {
+	cursor: default;
+	border: 3px solid rgba(122, 122, 122, 0);
+}
+
+.active {
+	background-color: rgba(122, 122, 122, 0);
+	border: 3px solid rgba(122, 122, 122, 0);
+}
+
+.centered {
+	text-align: center;
+	justify-content: start;
+}
+
+.unselectable {
+	-moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+.grid-container {
+	display: grid;
+	gap: 30px;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.thumb {
+	height: 200px;
+	width: 200px;
+	border: 1px solid darkgrey;
+}
+
+.project {
+	display: flex;
+	flex-direction: column;
+}
+
+.link {
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+}
