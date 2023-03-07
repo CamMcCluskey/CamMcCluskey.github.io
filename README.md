@@ -1,1 +1,1 @@
-[CamMcCluskey.github.io](https://cammccluskey.github.io)
+[CamMcCluskey.com](https://cammccluskey.com)
