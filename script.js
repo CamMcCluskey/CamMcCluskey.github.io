@@ -1,3 +1,5 @@
+const clickToCopy = document.querySelector('.click-to-select');
+
 const getArrayFromClassName = (className => {
 	return Array.from(document.getElementsByClassName(className))
 })
@@ -19,4 +21,12 @@ const refreshPage = (id) => {
 	document.querySelector("." + id).hidden = false;
 }
 
+const copyText = (element) => {
+	console.log(element);
+	navigator.clipboard.writeText(element.innerHTML);
+}
+
 tabList.forEach(tab => tab.addEventListener("click", tabClick));
+clickToCopy.addEventListener('click', function(){
+	copyText(clickToCopy);
+});
